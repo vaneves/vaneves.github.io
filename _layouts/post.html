@@ -35,6 +35,18 @@
         <p class="byline"><strong>{{ page.title }}</strong> foi publicado em <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} e atualizado em <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
       </footer>
     </div><!-- /.article-wrap -->
+    
+    {% if site.related_posts.size > 0 %}
+    <div class="related-articles">
+    <h4>Leia mais!</h4>
+      <ul>
+      {% for post in site.related_posts limit:3 %}
+        <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+      <hr />
+    </div><!-- /.related-articles -->
+    {% endif %}
   {% if site.owner.disqus-shortname and page.comments == true %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
   {% endif %}
@@ -42,17 +54,6 @@
 </div><!-- /#main -->
 
 <div class="footer-wrap">
-  {% if site.related_posts.size > 0 %}
-  <div class="related-articles">
-  <h4>Leia mais!</h4>
-    <ul>
-    {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-    <hr />
-  </div><!-- /.related-articles -->
-  {% endif %}
   <footer>
     {% include _footer.html %}
   </footer>
