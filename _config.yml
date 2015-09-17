@@ -16,6 +16,9 @@ sass:
 gems:
   - jekyll-sitemap
 
+paginate: 10
+paginate_path: "/pagina-:num/"
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
@@ -28,7 +31,7 @@ kramdown:
 owner:
   name: "Van Neves"
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Bacharel em Sistemas de Informação, desenvolvedor PHP deste antes de nascer."
   email: "vaneves@vaneves.com"
   disqus-shortname:
   twitter: vaneves
