@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ambiente de desenvolvimento PHP"
+title: "Ambiente de Desenvolvimento PHP"
 excerpt: "Antes de colocar a mão da massa, vou apresentar a lista do ingredientes necessários. Em outras palavras, vou apresentar quais ferramentas necessárias para montar um ambiente de desenvolvimento PHP."
 modified: 2015-09-17
 tags: [ambiente]
