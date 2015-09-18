@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            "Van Neves"
+title:            "Van Neves / Blog"
 locale:           pt_BR
 url:
 
@@ -8,7 +8,7 @@ url:
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown:    redcarpet
 highlighter: pygments
 sass:
   sass_dir: _sass
@@ -26,6 +26,9 @@ kramdown:
   toc_levels: 1..6
   use_coderay: false
 
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 # Site owner
 owner:
