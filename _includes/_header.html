@@ -1,0 +1,27 @@
+<div class="image-wrap">
+  <div class="image-wrap-table">
+    <div class="image-wrap-middle">
+      <div class="image-wrap-content">
+        <div class="article-author-side">
+          {% include _author-bio.html %}
+        </div>
+        <div class="headline">
+          <h1>{{ page.title }}</h1>
+          {% if page.date %}
+          <div class="time">
+            <span class="fa fa-clock-o"></span> 
+            Publicado em <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+          </div>
+          {% else %}
+            {% if page.excerpt %}
+            <div class="time">
+              <span class="fa fa-comments-o"></span> 
+              {{ page.excerpt }}
+            </div>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
