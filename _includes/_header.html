@@ -9,8 +9,27 @@
           <h1>{{ page.title }}</h1>
           {% if page.date %}
           <div class="time">
-            <span class="fa fa-clock-o"></span> 
-            Publicado em <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            <span class="fa fa-calendar-o"></span> 
+            Publicado em <time datetime="{{ page.date | date_to_xmlschema }}">
+              <!-- Whitespace added for readability -->
+              {% assign m = page.date | date: "%-m" %}
+              {{ page.date | date: "%-d" }} de
+              {% case m %}
+                {% when '1' %}Janeiro
+                {% when '2' %}Fevereiro
+                {% when '3' %}Mar&ccedil;0
+                {% when '4' %}Abril
+                {% when '5' %}Maio
+                {% when '6' %}Junho
+                {% when '7' %}Julio
+                {% when '8' %}Agosto
+                {% when '9' %}Setembro
+                {% when '10' %}Outubro
+                {% when '11' %}Novembro
+                {% when '12' %}Dezembro
+              {% endcase %}
+              de {{ page.date | date: "%Y" }}
+            </time>
           </div>
           {% else %}
             {% if page.excerpt %}
