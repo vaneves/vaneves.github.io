@@ -34,7 +34,7 @@ class Vendor_User
 
 Comumente os programadores PHP utilizam diversas bibliotecas e componentes em um mesmo projeto, na qual, se cada grupo/pessoa utilizar seu próprio estilo, o desenvolvido fica estranho e dificultoso. Então em 2009 uma galera se juntou e criou o [PHP-FIG](http://www.php-fig.org/) (PHP Framework Interop Group). O grupo criou (e continua aprimorando) um conjunto de guias de estilo de código, conhecidos como [PSR](http://www.php-fig.org/psr/) (PHP Standard Recommendation).
 
-As PSRs são ~~obrigações~~ recomendações, mas todos os desenvolvedores PHP devem seguir, pois pior meio delas a facilidade de entendimento e integração entre framework, bibliotecas e componentes são incríveis.
+As PSRs são ~~obrigações~~ recomendações, mas todos os desenvolvedores PHP devem seguir, pois por meio delas a facilidade de entendimento e integração entre framework, bibliotecas e componentes são incríveis.
 
 - **PSR-0:** Define como os arquivos serão "carregados" na aplicação, a técnica usada é chamada de autoloader;
 - **PSR-1:** Define o padrão básico de codificação, como a tag PHP, codifiação do arquivo, nome dos métodos, etc.;
