@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "O Básico"
+title: "Variáveis, Contantes e Operadores"
 excerpt: "Finalmente vamos por a mão na massa e entrar nos conceitos básicos da linguagem. O PHP muda das demais linguagens não somente a sintaxe, aqui verá algo um pouco diferente, que no começo pode até assustar, mas depois que pegar o jeito, vai gostar."
 modified: 2015-09-18
-tags: [php, básico, variáveis, lógica de programação]
+tags: [php, constante, variáveis, lógica de programação]
 comments: true
 ---
 
